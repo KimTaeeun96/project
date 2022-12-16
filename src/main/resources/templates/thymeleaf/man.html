@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>오늘 뭐 입지?</title>
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/spring.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap"
+		rel="stylesheet">
+</head>
+
+<style>
+	/* CSS */
+	.button-27 {
+		appearance: none;
+		background-color: #c4ddff;
+		border: 3px solid #ebecee;
+		border-radius: 15px;
+		box-sizing: border-box;
+		color: #FFFFFF;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 16px;
+		line-height: normal;
+		margin: 0;
+		min-height: 50px;
+		min-width: 80px;
+		outline: none;
+		text-align: center;
+		text-decoration: none;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		will-change: transform;
+	}
+
+	.button-27:disabled {
+		pointer-events: none;
+	}
+
+	.button-27:hover {
+		box-shadow: rgba(0, 0, 0, 0.25) 0 10px 15px;
+		transform: translateY(-2px);
+	}
+
+	.button-27:active {
+		box-shadow: none;
+		transform: translateY(0);
+	}
+
+
+	input {
+		margin: .4rem;
+	}
+
+
+
+
+	.button-27 {
+		margin-left: 100px;
+	}
+
+	table,
+	th,
+	td {
+		border: 0px solid #bcbcbc;
+		font-size: 13pt;
+		padding: 8px;
+
+	}
+
+	table {
+		width: 1200px;
+	}
+
+	.line {
+		border-bottom: 1px solid black;
+	}
+
+	.box {
+		width: 20px;
+		height: 20px;
+	}
+</style>
+
+<body>
+
+	<!-- Start Header Area -->
+	<header class="header_area sticky-header">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light main_box">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""
+							style="width: 70px;"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item"><a class="nav-link" href="index.html" style="font-size: 11pt;">Home</a>
+							</li>
+
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+									aria-haspopup="true" aria-expanded="false" style="font-size: 11pt;">옷장</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="registration.html"
+											style="font-size: 11pt;">나만의 옷장 등록</a></li>
+									<li class="nav-item"><a class="nav-link" href="closet.html"
+											style="font-size: 11pt;">나만의 옷장</a></li>
+									<li class="nav-item"><a class="nav-link" href="diary.html"
+											style="font-size: 11pt;">다이어리</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+									aria-haspopup="true" aria-expanded="false" style="font-size: 11pt;">코디</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="weather.html"
+											style="font-size: 11pt;">날씨별 코디 추천</a></li>
+									<li class="nav-item"><a class="nav-link" href="color.html"
+											style="font-size: 11pt;">색조합 코디 추천</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="list.html" style="font-size: 11pt;">커뮤니티</a>
+							</li>
+							<li class="nav-item active"><a class="nav-link" href="contact.html"
+									style="font-size: 11pt;">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="login.html"
+									style="font-size: 11pt;">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+	<!-- Start Banner Area -->
+
+	<!-- End Banner Area -->
+
+
+	<!--================Contact Area =================-->
+	<br><br><br><br><br><br><br><br>
+	<center><img src="img/man.png" style="width: 470px; text-align: center;">
+	</center>
+	<br><br>
+	<div>
+		<center>
+			<div style="color: black;">
+				<table>
+					<tr class="line">
+						<td>온도</td>
+						<td><label><input type="checkbox" name="temperature" value="0°C">0°C</label></td>
+						<td><label><input type="checkbox" name="temperature" value="5°C">5°C</label></td>
+						<td><label><input type="checkbox" name="temperature" value="9°C">9°C</label></td>
+						<td><label><input type="checkbox" name="temperature" value="12°C">12°C</label></td>
+						<td><label><input type="checkbox" name="temperature" value="17°C">17°C</label></td>
+						<td><label><input type="checkbox" name="temperature" value="20°C">20°C</label></td>
+						<td><label><input type="checkbox" name="temperature" value="23°C">23°C</label></td>
+						<td><label><input type="checkbox" name="temperature" value="28°C">28°C</label></td>
+					</tr>
+
+					<tr class="line">
+						<td>스타일</td>
+						<td><label><input type="checkbox" name="style" value="캐쥬얼">캐쥬얼</label></td>
+						<td><label><input type="checkbox" name="style" value="클래식">클래식</label></td>
+						<td><label><input type="checkbox" name="style" value="스포티">스포티</label></td>
+						<td><label><input type="checkbox" name="style" value="스트릿">스트릿</label></td>
+						<td><label><input type="checkbox" name="style" value="수트">수트</label></td>
+					</tr>
+					<tr class="line">
+						<td>해시태그</td>
+						<td><label><input type="checkbox" name="hashtag" value="따뜻함">따뜻함</label></td>
+						<td><label><input type="checkbox" name="hashtag" value="차가움">차가움</label></td>
+						<td><label><input type="checkbox" name="hashtag" value="컬러풀">컬러풀</label></td>
+						<td><label><input type="checkbox" name="hashtag" value="심플">심플</label></td>
+						<td><label><input type="checkbox" name="hashtag" value="소풍">소풍</label></td>
+						<td><label><input type="checkbox" name="hashtag" value="여행">여행</label></td>
+						<td><label><input type="checkbox" name="hashtag" value="데일리">데일리</label></td>
+						<td><label><input type="checkbox" name="hashtag" value="체크무늬">체크무늬</label></td>
+					</tr>
+					<tr>
+						<td>색상</td>
+						<td style="color: red; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="빨강">빨강</label>
+						</td>
+						<td style="color: white; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="흰색">흰색</label>
+						</td>
+						<td style="color: black;"><label><input type="checkbox" name="color" value="검정">검정</label></td>
+						<td style="color: gray; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="회색">회색</label>
+						</td>
+						<td style="color: orange; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="주황">주황</label>
+						</td>
+						<td style="color: yellow; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="노랑">노랑</label>
+						</td>
+						<td style="color: green; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="초록">초록</label>
+						</td>
+						<td style="color: blue; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="파랑">파랑</label>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td style="color: navy; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="남색">남색</label>
+						</td>
+						<td style="color: purple; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="보라">보라</label>
+						</td>
+						<td style="color: pink; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="분홍">분홍</label>
+						</td>
+						<td style="color: yellowgreen; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="연두">연두</label>
+						</td>
+						<td style="color: skyblue; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="하늘">하늘</label>
+						</td>
+						<td style="color: beige; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="베이지">베이지</label>
+						</td>
+						<td style="color: #536349; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="카키">카키</label>
+						</td>
+						<td style="color: brown; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="브라운">브라운</label>
+						</td>
+					</tr>
+					<tr class="line">
+						<td></td>
+						<td style="color: teal; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="청록색">청록색</label>
+						</td>
+						<td style="color: #fbceb1; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="살구색">살구</label>
+						</td>
+						<td style="color: #454545; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;">
+							<label><input type="checkbox" name="color" value="먹색">먹색</label>
+						</td>
+					</tr>
+				</table>
+				<br>
+			</div>
+		</center>
+	</div>
+	<div style="padding-left: 1360px;"><button class="button-27" onclick="getCheckboxValue()">조회</button></div>
+	<br><br><br><br><br>
+	<center>
+	<div style="color: black; font-size: 15pt;">
+		<p id='result'>
+		<p id='result2'>
+		<p id='result3'>
+		<p id='result4'></p></p></p></p>
+	</div>
+	</center>
+	<br>
+	<center>
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+	</center>
+
+	<center>
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+	</center>
+
+	<center>
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+
+		<div class="card-body" style="display: inline-block;">
+			<img src="https://kream-phinf.pstatic.net/MjAyMjExMDJfODMg/MDAxNjY3MzY1MTI2NDA1.5twH8lXBUntmK-lLz9ku-hWPRbCWshSdKjUUVhQsuokg.ccNFt2Z2qDmfn7nZUulP_qxS-THa7LuYLpF6s8WHpQcg.JPEG/p_910c6947c86348fab8e7bff31ed187d7.jpg?type=m"
+				alt="rover" style="width: 240px; height: 320px;" />
+			<h4><a href="comment.html" style="color: black;">
+					편하게 나들이 간 날 :)</a>
+			</h4></span>
+			<h6 style="color: #5cd3f0;">#나들이 #편한옷</h6>
+		</div>
+	</center>
+
+
+
+	<br><br><br><br><br><br><br>
+
+	<!-- start footer Area -->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>비트교육센터 3조 7777</h6>
+						<img src="img/logo.png" alt="" style="width: 80px; max-width: 100%; height: auto;">
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>GITHUB</h6>
+						<p></p>
+						<div class="footer-social d-flex align-items-center">
+							<a href="https://github.com/orgs/BitFinalProject2022/repositories" target="_blank"><img
+									src="img/github.png" alt="" style="width: 60px;"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget mail-chimp">
+						<h6 class="mb-20">QUICK MENU</h6>
+						<a href="registration.html"> - 나만의 옷 등록</a><br>
+						<a href="closet.html"> - 나만의 옷장</i></a><br>
+						<a href="diary.html"> - 다이어리</i></a><br>
+						<a href="list.html"> - 자유게시판</i></a><br>
+						<a href="contact.html"> - CONTACT US</i></a><br>
+						<a href="login.html"> - LOGIN</i></a>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>ADDRESS</h6>
+						<p style="color: #5cd3f0;">서울특별시 서초구 서초대로74길33
+							비트빌 3층</p>
+						<div class="footer-social d-flex align-items-center">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap" style="color: black;">
+				<p class="footer-text m-0">
+					Copyright 2022. 7777 all rights reserved.
+				</p>
+			</div>
+		</div>
+	</footer>d
+	<!-- End footer Area -->
+
+
+	<!--================End Contact Success and Error message Area =================-->
+
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/spring.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		function getCheckboxValue() {
+			// 선택된 목록 가져오기
+			const query = 'input[name="temperature"]:checked';
+			const query2 = 'input[name="style"]:checked';
+			const query3 = 'input[name="hashtag"]:checked';
+			const query4 = 'input[name="color"]:checked';
+
+			const selectedEls =
+				document.querySelectorAll(query);
+			const selectedEls2 =
+				document.querySelectorAll(query2);
+			const selectedEls3 =
+				document.querySelectorAll(query3);
+			const selectedEls4 =
+				document.querySelectorAll(query4);
+			
+			// 선택된 목록에서 value 찾기
+			let result = '';
+			selectedEls.forEach((el) => {
+				result += el.value + ' ';
+			});
+
+			let result2 = '';
+			selectedEls2.forEach((el) => {
+				result2 += el.value + ' ';
+			});
+
+			let result3 = '';
+			selectedEls3.forEach((el) => {
+				result3 += el.value + ' ';
+			});
+
+			let result4 = '';
+			selectedEls4.forEach((el) => {
+				result4 += el.value + ' ';
+			});
+
+			// 출력
+			document.getElementById('result').innerText
+				= result;
+			document.getElementById('result2').innerText
+				= result2;
+			document.getElementById('result3').innerText
+				= result3;
+			document.getElementById('result4').innerText
+				= result4;
+
+		}
+	</script>
+
+
+</body>
+
+</html>

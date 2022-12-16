@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" th:href="@{/img/fav.png}">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>오늘 뭐 입지?</title>
+    <!--
+		CSS
+		============================================= -->
+    <link rel="stylesheet" th:href="@{/css/linearicons.css}">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/css/themify-icons.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/css/owl.carousel.css}">
+    <link rel="stylesheet" th:href="@{/css/nice-select.css}">
+    <link rel="stylesheet" th:href="@{/css/nouislider.min.css}">
+    <link rel="stylesheet" th:href="@{/css/ion.rangeSlider.css}" />
+    <link rel="stylesheet" th:href="@{/css/ion.rangeSlider.skinFlat.css}" />
+    <link rel="stylesheet" th:href="@{/css/magnific-popup.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/board.css}">
+    <link rel="stylesheet" th:href="@{/css/page.css}">
+    
+</head>
+
+<body>
+
+    <!-- Start Header Area -->
+    <header class="header_area sticky-header">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light main_box">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" th:href="index.html"><img th:src="img/logo.png" alt=""
+                            style="width: 70px;"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" th:href="@{/index.html}" style="font-size: 11pt;">Home</a>
+                            </li>
+
+                            <li class="nav-item submenu dropdown">
+                                <a th:href="@{/#}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false" style="font-size: 11pt;">옷장</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" th:href="@{/registration.html}"
+                                            style="font-size: 11pt;">나만의 옷장 등록</a></li>
+                                    <li class="nav-item"><a class="nav-link" th:href="@{/closet.html}"
+                                            style="font-size: 11pt;">나만의 옷장</a></li>
+                                    <li class="nav-item"><a class="nav-link" th:href="@{/diary.html}"
+                                            style="font-size: 11pt;">다이어리</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu dropdown">
+                                <a th:href="@{/#}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false" style="font-size: 11pt;">코디</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" th:href="@{/weather.html}"
+                                            style="font-size: 11pt;">날씨별 코디 추천</a></li>
+                                    <li class="nav-item"><a class="nav-link" th:href="@{/color.html}"
+                                            style="font-size: 11pt;">색조합 코디 추천</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item active"><a class="nav-link" th:href="@{/list.html}"
+                                    style="font-size: 11pt;">커뮤니티</a></li>
+                            <li class="nav-item"><a class="nav-link" th:href="@{/contact.html}"
+                                    style="font-size: 11pt;">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" th:href="@{/login.html}"
+                                    style="font-size: 11pt;">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="search_input" id="search_input_box">
+            <div class="container">
+                <form class="d-flex justify-content-between">
+                    <input type="text" class="form-control" id="search_input" placeholder="Search Here">
+                    <button type="submit" class="btn"></button>
+                    <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Banner Area -->
+
+    <section class="notice">
+        <br><br><br><br>
+        <!-- board seach area -->
+            <div class="board_wrap" style="color: black;">
+                <div class="board_title">
+                    <strong>공지사항</strong>
+                    <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+                </div>
+                <div class="board_write_wrap">
+                    <div class="board_write">
+                        <div class="title">
+                            <dl>
+                                <dt>제목</dt>
+                                <dd><input type="text" placeholder="제목 입력" value="글 제목이 들어갑니다"></dd>
+                            </dl>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>카테고리</dt>
+                                <dd><input type="text" placeholder="카테고리 입력"></dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            <textarea placeholder="내용 입력">
+        글 내용이 들어갑니다.</textarea>
+                        </div>
+                    </div>
+                    <div class="bt_wrap">
+                        <a th:href="@{/view.html}" class="on">수정</a>
+                        <a th:href="@{/view.html}">취소</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <!-- End Banner Area -->
+
+
+
+    <!-- start footer Area -->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>비트교육센터 3조 7777</h6>
+						<img th:src="@{/img/logo.png}" alt="" style="width: 80px; max-width: 100%; height: auto;">
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>GITHUB</h6>
+						<p></p>
+						<div class="footer-social d-flex align-items-center">
+							<a th:href="@{https://github.com/orgs/BitFinalProject2022/repositories}" target="_blank"><img th:src="img/github.png" alt="" style="width: 60px;"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget mail-chimp">
+						<h6 class="mb-20">QUICK MENU</h6>
+						<a th:href="@{/registration.html}"> - 나만의 옷 등록</a><br>
+						<a th:href="@{/closet.html}"> - 나만의 옷장</i></a><br>
+						<a th:href="@{/diary.html}"> - 다이어리</i></a><br>
+						<a th:href="@{/list.html}"> - 자유게시판</i></a><br>
+						<a th:href="@{/contact.html}"> - CONTACT US</i></a><br>
+						<a th:href="@{/login.html}"> - LOGIN</i></a>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>ADDRESS</h6>
+						<p style="color: #5cd3f0;">서울특별시 서초구 서초대로74길33
+							비트빌 3층</p>
+						<div class="footer-social d-flex align-items-center">
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap" style="color: black;">
+				<p class="footer-text m-0">
+					Copyright 2022. 7777 all rights reserved.
+				</p>
+			</div>
+		</div>
+	</footer>
+    <!-- End footer Area -->
+
+
+    <script th:src="@{/js/vendor/jquery-2.2.4.min.js}"></script>
+    <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js}"></script>
+    <script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+    <script th:src="@{/js/jquery.ajaxchimp.min.js}"></script>
+    <script th:src="@{/js/jquery.nice-select.min.js}"></script>
+    <script th:src="@{/js/jquery.sticky.js}"></script>
+    <script th:src="@{/js/nouislider.min.js}"></script>
+    <script th:src="@{/js/jquery.magnific-popup.min.js}"></script>
+    <script th:src="@{/js/owl.carousel.min.js}"></script>
+    <!--gmaps Js-->
+    <script th:src="@{https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE}"></script>
+    <script th:src="@{/js/gmaps.min.js"></script>
+    <script th:src="@{/js/main.js"></script>
+</body>
+</html>
